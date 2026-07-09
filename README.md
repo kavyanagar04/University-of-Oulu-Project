@@ -1,6 +1,6 @@
 # Emotion-Aware Robot Behavior Engine 🤖🎙️
 
-[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/kavyanagar04/University-of-Oulu-Project/blob/main/Oulu_Project_Colab_Final_edited.ipynb)
+[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/kavyanagar04/University-of-Oulu-Project/blob/main/Oulu_Project_Colab_Final_Edited.ipynb)
 
 An end-to-end AI pipeline designed to process raw human speech audio, transcribe it, detect the speaker's exact emotional state using a fine-tuned deep learning model, and dynamically generate an empathetic, emotionally-aligned vocal response in real-time. 
 
@@ -43,6 +43,6 @@ Because this project utilizes heavy Transformer models and requires a GPU, it is
 
 1. Download the pre-trained Wav2Vec2 model, the IEMOCAP parquet dataset, and the RAVDESS zero-shot dataset (`Ravdess Dataset.zip`) from [https://drive.google.com/drive/folders/1KlnbkRpVwGxzQ__EN3YlnmuMXaVQTi8K?usp=sharing].
 2. Upload all the unzipped model folders and the `Ravdess Dataset.zip` file into a folder named `Oulu Project` in the root of your Google Drive.
-3. Open `Oulu_Project_Colab_Final_edited.ipynb` in Google Colab.
+3. Open `Oulu_Project_Colab_Final_Edited.ipynb` in Google Colab.
 4. Input your **Groq API key** when prompted in the setup cell.
 5. Click **Run All** to execute the training, feature extraction, and the real-time inference pipeline!
