@@ -1,5 +1,5 @@
 # Emotion-Aware Robot Behavior Engine 🤖🎙️
-[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/kavyanagar04/University-of-Oulu-Project/blob/main/Oulu_Project_Final_Edited.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kavyanagar04/University-of-Oulu-Project/blob/main/Oulu_Project_Final_Edited.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kavyanagar04/University-of-Oulu-Project/blob/main/Oulu_Project_Final_Edited.ipynb)
 
 An end-to-end AI pipeline designed to process raw human speech audio, transcribe it, detect the speaker's exact emotional state using a fine-tuned deep learning model, and dynamically generate an empathetic, emotionally-aligned vocal response in real-time.
 
