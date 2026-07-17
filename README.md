@@ -20,19 +20,21 @@ The system is built on a modular, 4-stage architecture designed to mimic natural
 ---
 
 ## 📊 Performance & Latency Metrics
-* **Baseline SVM Accuracy:** ~60% (trained on 84 manually extracted acoustic descriptors like MFCCs, Pitch, and ZCR).
+* **Baseline SVM Accuracy:** ~51% (trained on 84 manually extracted acoustic descriptors like MFCCs, Pitch, and ZCR).
 * **Deep Learning Superiority (Wav2Vec2):** Achieved **~64.4% Weighted Accuracy (WA)** on the held-out IEMOCAP Session 5 test set.
-* **End-to-End Latency:** Achieved a blistering total inference time of **~1.48 seconds** on a standard Google Colab T4 GPU (Audio In → Audio Out).
-  * *LLM Generation (Groq):* ~0.2s
-  * *Neural TTS Rendering:* ~1.1s
+* **End-to-End Latency:** Achieved a blistering total inference time of **1.90 seconds** (Mean Latency) on a standard Google Colab T4 GPU (Audio In → Audio Out).
+  * *Speech-to-Text (Whisper):* ~0.49s
+  * *Speech Emotion Recognition:* ~0.04s
+  * *LLM Generation (Groq):* ~0.94s
+  * *Text-to-Speech (gTTS/Edge):* ~0.44s
 
 ---
 
 ## 🧪 Generalization Testing (RAVDESS Zero-Shot)
 To evaluate the true acoustic invariance of the fine-tuned Wav2Vec2 model, a massive Zero-Shot generalization test was conducted on a completely unseen, out-of-domain dataset (RAVDESS).
 
-* **Test Scope:** 1,728 filtered 4-class audio samples.
-* **Results:** Achieved **~29% Weighted Accuracy** (26% Unweighted).
+* **Test Scope:** 1,440 filtered 4-class audio samples.
+* **Results:** Achieved **26% Weighted Accuracy** and **28% Unweighted Accuracy**.
 * **Research Analysis:** The model exhibited a heavy bias towards predicting "Angry" (99% recall). This highlights a severe acoustic domain shift: IEMOCAP contains natural, conversational dialogue in a room, while RAVDESS contains exaggerated, theatrical speech in a sterile studio. The model successfully overfit to IEMOCAP's specific acoustic profile. Future real-world robotic deployments require multi-corpus training (e.g., IEMOCAP + RAVDESS + CREMA-D) to survive massive acoustic domain shifts.
 
 ---
