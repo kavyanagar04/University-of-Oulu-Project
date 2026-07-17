@@ -1,4 +1,4 @@
-# Emotion-Aware Robot Behavior Engine 🤖🎙️
+# Emotion-Aware Robot Behavior Engine
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kavyanagar04/University-of-Oulu-Project/blob/main/Oulu_Project_Final_Edited.ipynb)
 
 An end-to-end AI pipeline designed to process raw human speech audio, transcribe it, detect the speaker's exact emotional state using a fine-tuned deep learning model, and dynamically generate an empathetic, emotionally-aligned vocal response in real-time.
@@ -7,7 +7,7 @@ An end-to-end AI pipeline designed to process raw human speech audio, transcribe
 
 ---
 
-## 🚀 The 4-Stage Inference Pipeline
+## The 4-Stage Inference Pipeline
 The system is built on a modular, 4-stage architecture designed to mimic natural human empathetic conversation with ultra-low latency:
 
 1. **Stage 0 (Speech-to-Text):** OpenAI Whisper Base model transcribes the raw audio waveform into semantic text.
@@ -19,7 +19,7 @@ The system is built on a modular, 4-stage architecture designed to mimic natural
 
 ---
 
-## 📊 Performance & Latency Metrics
+## Performance & Latency Metrics
 * **Baseline SVM Accuracy:** ~51% (trained on 84 manually extracted acoustic descriptors like MFCCs, Pitch, and ZCR).
 * **Deep Learning Superiority (Wav2Vec2):** Achieved **~64.4% Weighted Accuracy (WA)** on the held-out IEMOCAP Session 5 test set.
 * **End-to-End Latency:** Achieved a blistering total inference time of **1.90 seconds** (Mean Latency) on a standard Google Colab T4 GPU (Audio In → Audio Out).
@@ -30,7 +30,7 @@ The system is built on a modular, 4-stage architecture designed to mimic natural
 
 ---
 
-## 🧪 Generalization Testing (RAVDESS Zero-Shot)
+## Generalization Testing (RAVDESS Zero-Shot)
 To evaluate the true acoustic invariance of the fine-tuned Wav2Vec2 model, a massive Zero-Shot generalization test was conducted on a completely unseen, out-of-domain dataset (RAVDESS).
 
 * **Test Scope:** 1,440 filtered 4-class audio samples.
@@ -39,7 +39,7 @@ To evaluate the true acoustic invariance of the fine-tuned Wav2Vec2 model, a mas
 
 ---
 
-## 🛠️ How to Run on Colab
+## How to Run on Colab
 Because this project utilizes heavy Transformer models and requires a GPU, it is designed to run seamlessly on Google Colab.
 
 1. Download the pre-trained Wav2Vec2 model, the IEMOCAP parquet dataset, and the RAVDESS zero-shot dataset (`Ravdess Dataset.zip`) from [https://drive.google.com/drive/folders/1KlnbkRpVwGxzQ__EN3YlnmuMXaVQTi8K?usp=sharing].
